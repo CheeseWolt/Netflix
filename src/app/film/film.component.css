@@ -1,0 +1,30 @@
+
+.card{
+    width: 75%;
+}
+
+
+.card:hover{
+    transform: scale(1.5);
+    opacity: 1;
+    z-index: 1;
+}
+
+.card-title{
+    text-align: center;
+    font-size: 100%;
+    background-color: rgba(255,255,255,0.90);
+}
+
+.card-img-overlay{
+    transition: transform 1s;
+    visibility: hidden;
+    height: 10%;
+    transform: translateY(500%);
+}
+
+.card:hover .card-img-overlay{
+    visibility: visible;
+    transform: translateY(300%);
+    transform-origin: 0 0;
+}

@@ -1,0 +1,9 @@
+<a [routerLink]="['/detailFilm', film.id]">
+    <div class="card mb-4">
+        <div class="card-img-overlay">
+            <h3 class="card-title">{{film.title}}</h3>
+        </div>
+        <img src="https://image.tmdb.org/t/p/w200{{film.poster_path}}" alt="Image du film"
+            class="card-img-top img-thumbnail">
+    </div>
+</a>
