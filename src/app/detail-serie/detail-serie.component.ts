@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { SerieService } from '../serie.service';
+import { SerieService } from '../services/serie.service';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -14,14 +14,12 @@ export class DetailSerieComponent implements OnInit {
 
   constructor(private serieService : SerieService, private route : ActivatedRoute) {
     this.route.params.subscribe(params => this.id = params);
-    console.log(this.id.id);
 
   }
 
   ngOnInit() {
-    this.serie = this.serieService.getSerieById(this.id).subscribe
+    this.serie = this.serieService.getSerieById(this.id.id).subscribe
       (data=>{
-        console.log(data);
         this.serie = data;
       })
   }
