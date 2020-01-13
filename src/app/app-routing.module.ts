@@ -7,6 +7,7 @@ import { DetailSerieComponent } from './detail-serie/detail-serie.component';
 
 
 const routes: Routes = [
+  {path:"", redirectTo:"film", pathMatch:"full"},
   {path:"film", component:ListFilmComponent},
   {path: "serie" , component:ListSerieComponent},
   {path:"detailFilm/:id", component:DetailFilmComponent},
