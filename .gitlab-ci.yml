@@ -11,7 +11,8 @@ e2e_tests :
     image : node:latest
     stage: test
     script:
-        - npm run ng e2e
+        # - npm run ng e2e
+        - echo "No e2e testing yet"
 
 unit_test:
     image: node:latest
