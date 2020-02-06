@@ -1,1 +1,5 @@
-image: cheesewolt/netflix:latest
+default:
+    image: cheesewolt/netflix:latest
+build_stage :
+    stage: build
+    script: echo "ok"
