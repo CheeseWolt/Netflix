@@ -31,7 +31,8 @@ unit_test:
     image: node:latest
     stage : test
     script :
-        - npm run ng test
+        # - npm run ng test
+        - echo "No unit testing yet"
 
 deployment_stage:
     stage: deploy
