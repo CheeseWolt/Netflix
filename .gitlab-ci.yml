@@ -1,6 +1,16 @@
-default:
-    cache:
-        key: ${CI_COMMIT_REF_SLUG}
+#
+# https://gitlab.com/gitlab-org/gitlab-foss/tree/master/lib/gitlab/ci/templates/Nodejs.gitlab-ci.yml
+#
+image: node:latest
+
+# Cache modules in between jobs
+cache:
+    key: ${CI_COMMIT_REF_SLUG}
+    paths:
+    - node_modules/
+
+before_script:
+    - npm install
 
 build_stage :
     image: tiangolo/node-frontend:10
