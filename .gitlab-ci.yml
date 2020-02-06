@@ -11,4 +11,4 @@ deploy_stage:
         - master
     script:
         - npm install
-        -./node_modules/@angular/cli/bin/ng build --prod
+        - ./node_modules/@angular/cli/bin/ng build --prod
