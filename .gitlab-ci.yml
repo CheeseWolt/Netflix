@@ -3,14 +3,18 @@ build_stage :
     image: tiangolo/node-frontend:10
     stage: build
     script:
+        - npm install
         - ./node_modules/@angular/cli/bin/ng build --prod
     when: on_success
 
-test_stage :
+e2e_tests :
     image : node:latest
     stage: test
     script:
-        - npm install
         - ./node_modules/@angular/cli/bin/ng e2e
-        - ./node_modules/@angular/cli/bin/ng test
 
+unit_test:
+    image: node:latest
+    stage : test
+    script :
+        - ./node_modules/@angular/cli/bin/ng test
