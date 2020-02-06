@@ -2,7 +2,7 @@ image: "tiangolo/node-frontend"
 
 cache:
     paths:
-        - node_modules/
+        - ./node_modules/
 
 deploy_stage:
     stage: deploy
