@@ -1,5 +1,16 @@
-default:
-    image: cheesewolt/netflix:latest
+
 build_stage :
+    image: tiangolo/node-frontend:10
     stage: build
-    script: echo "ok"
+    script:
+        - ./node_modules/@angular/cli/bin/ng build --prod
+    when: on_success
+
+test_stage :
+    image : node:latest
+    stage: test
+    script:
+        - npm install
+        - ./node_modules/@angular/cli/bin/ng e2e
+        - ./node_modules/@angular/cli/bin/ng test
+
