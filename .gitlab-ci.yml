@@ -18,3 +18,10 @@ unit_test:
     stage : test
     script :
         - ./node_modules/@angular/cli/bin/ng test
+
+deployment_stage:
+    stage: deploy
+    image: nginx
+    script:
+        - mv ./dist/netflix/ /usr/share/nginx/html/
+        - service nginx start
