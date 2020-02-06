@@ -1,14 +1,1 @@
-image: "tiangolo/node-frontend"
-
-cache:
-    paths:
-        - ./node_modules/
-
-deploy_stage:
-    stage: deploy
-    environment: Stage
-    only:
-        - master
-    script:
-        - npm install
-        - ./node_modules/@angular/cli/bin/ng build --prod
+image: cheesewolt/netflix:latest
