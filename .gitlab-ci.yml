@@ -36,7 +36,8 @@ unit_test:
 
 deployment_stage:
     stage: deploy
-    image: nginx
+    # image: nginx
     script:
-        - mv ./dist/netflix/ /usr/share/nginx/html/
-        - service nginx start
+        # - mv ./dist/netflix/ /usr/share/nginx/html/
+        # - service nginx start
+        - echo "Configure deployement here"
