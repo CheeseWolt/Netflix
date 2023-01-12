@@ -7,11 +7,11 @@ import { DetailSerieComponent } from './detail-serie/detail-serie.component';
 
 
 const routes: Routes = [
-  {path:"", redirectTo:"film", pathMatch:"full"},
-  {path:"film", component:ListFilmComponent},
-  {path: "serie" , component:ListSerieComponent},
-  {path:"detailFilm/:id", component:DetailFilmComponent},
-  {path:"detailSerie/:id",component:DetailSerieComponent}
+  {path:"", redirectTo:"films", pathMatch:"full"},
+  {path:"films", component:ListFilmComponent},
+  {path: "series" , component:ListSerieComponent},
+  {path:"films/:id", component:DetailFilmComponent},
+  {path:"series/:id",component:DetailSerieComponent}
 ];
 
 @NgModule({
