@@ -10,10 +10,10 @@ export class ListSerieComponent implements OnInit {
 
   constructor(private serieService : SerieService) { }
 
-  series;
+  series: any[];
 
   ngOnInit() {
-    this.series = this.serieService.getSeries().subscribe(data => this.series = data["results"])
+    this.serieService.getSeries().subscribe(data => this.series = data["results"])
   }
 
 }

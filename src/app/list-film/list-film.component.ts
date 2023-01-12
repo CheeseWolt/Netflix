@@ -10,10 +10,10 @@ export class ListFilmComponent implements OnInit {
 
   constructor(private filmService : FilmService) { }
 
-  films;
+  films: any[];
   
   ngOnInit() {
-    this.films = this.filmService.getFilms().subscribe(data=>this.films = data['results']);
+    this.filmService.getFilms().subscribe(data=>this.films = data['results']);
   }
 
 }
