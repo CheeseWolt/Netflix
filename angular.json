@@ -18,7 +18,7 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": false,
+            "aot": true,
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -68,7 +68,8 @@
           },
           "configurations": {
             "production": {
-              "browserTarget": "Netflix:build:production"
+              "browserTarget": "Netflix:build:production",
+              "aot": true
             }
           }
         },
@@ -121,6 +122,9 @@
           }
         }
       }
-    }},
-  "defaultProject": "Netflix"
+    }
+  },
+  "cli": {
+    "analytics": false
+  }
 }
