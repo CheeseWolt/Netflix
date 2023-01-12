@@ -10,7 +10,9 @@
     "e2e": "ng e2e"
   },
   "private": true,
-  "resolutions": {"webpack": "^5.0.0"},
+  "resolutions": {
+    "webpack": "^5.0.0"
+  },
   "dependencies": {
     "@angular/animations": "^15.1.0",
     "@angular/common": "^15.1.0",
@@ -21,6 +23,7 @@
     "@angular/platform-browser-dynamic": "^15.1.0",
     "@angular/router": "^15.1.0",
     "bootstrap": "^4.4.1",
+    "codelyzer": "^6.0.2",
     "rxjs": "~6.6.7",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.8"
@@ -33,7 +36,6 @@
     "@types/jasmine": "~3.3.8",
     "@types/jasminewd2": "^2.0.8",
     "@types/node": "~8.9.4",
-    "codelyzer": "^5.2.1",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~5.0.0",
     "karma": "~6.4.1",
