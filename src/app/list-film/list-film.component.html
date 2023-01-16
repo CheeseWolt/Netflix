@@ -1,3 +1,5 @@
-    <div class="card-deck justify-content-center" *ngIf="films">
-        <app-film *ngFor="let film of films" [film]="film"></app-film>
+<div class="container" *ngIf="films">
+    <div class="row row-cols-4">    
+        <app-film class="col" *ngFor="let film of films" [film]="film"></app-film>
     </div>
+</div>

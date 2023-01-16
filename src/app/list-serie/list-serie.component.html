@@ -1,3 +1,5 @@
-<div class="card-deck justify-content-center" *ngIf="series">
-    <app-serie *ngFor="let serie of series" [serie]="serie"></app-serie>
+<div class="container" *ngIf="series">
+    <div class="row row-cols-4">  
+            <app-serie *ngFor="let serie of series" [serie]="serie"></app-serie>
+    </div>
 </div>
