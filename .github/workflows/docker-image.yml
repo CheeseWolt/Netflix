@@ -23,4 +23,4 @@ jobs:
       uses: docker/build-push-action@v3.3.0
       with:
         push: true
-        tags: ${{ secrets.DOCKERHUB_USERNAME }}/netflix, ${{ secrets.DOCKERHUB_USERNAME }}/netflix:$(date %s)
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}/netflix, ${{ secrets.DOCKERHUB_USERNAME }}/netflix:${{ github.sha }}
