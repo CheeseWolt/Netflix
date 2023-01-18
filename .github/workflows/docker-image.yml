@@ -1,6 +1,7 @@
 name: Docker Image CI
 
-on: [workflow_call]
+on:
+  release:
 jobs:
 
   build:
@@ -18,4 +19,4 @@ jobs:
       uses: docker/build-push-action@v3.3.0
       with:
         push: true
-        tags: ${{ secrets.DOCKERHUB_USERNAME }}/netflix, ${{ secrets.DOCKERHUB_USERNAME }}/netflix:${{ github.sha }}
+        tags: ${{ secrets.DOCKERHUB_USERNAME }}/netflix, ${{ secrets.DOCKERHUB_USERNAME }}/netflix:${{ github.ref }}
