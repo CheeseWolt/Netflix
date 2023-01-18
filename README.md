@@ -1,6 +1,7 @@
 # Netflix
 
 [![Node.js CI](https://github.com/CheeseWolt/Netflix/actions/workflows/node.js.yml/badge.svg)](https://github.com/CheeseWolt/Netflix/actions/workflows/node.js.yml)
+[![Docker Image CI](https://github.com/CheeseWolt/Netflix/actions/workflows/docker-image.yml/badge.svg)](https://hub.docker.com/repository/docker/cheesewolt/netflix/general)
 
 Clone de l'affichage de netflix sous angular avec les films de l'API [Open Movie Database](https://api.themoviedb.org/)
 
